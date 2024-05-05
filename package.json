@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start app.js --name mini-app"
+    "start": "pm2 start app.js --name mini-app",
+    "down": "pm2 stop mini-app"
   },
   "keywords": [],
   "author": "",

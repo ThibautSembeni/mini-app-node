@@ -4,9 +4,11 @@ services:
   node:
     image: node:18
     container_name: node
+    user: node
+    tty: true
+    stdin_open: true
     working_dir: /app
     volumes:
       - ./:/app
     ports:
       - "80:80"
-    command: npm run start
